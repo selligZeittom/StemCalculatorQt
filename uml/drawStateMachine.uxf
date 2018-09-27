@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>650</x>
+      <y>104</y>
+      <w>26</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>117</y>
+      <w>39</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>507</x>
+      <y>221</y>
+      <w>325</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>ST_DRAW_INIT
+--
+/entry : init the structure of data
+
+halign=center
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>507</x>
+      <y>442</y>
+      <w>325</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>ST_DRAW_WAIT
+--
+/entry : display the drawing screen
+halign=center
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>338</y>
+      <w>104</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+EV_INIT</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>559</y>
+      <w>130</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+EV_DRAW</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>819</x>
+      <y>494</y>
+      <w>286</w>
+      <h>325</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+EV_WAIT_DRAW</panel_attributes>
+    <additional_attributes>10.0;230.0;90.0;230.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>520</x>
+      <y>741</y>
+      <w>312</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>ST_DRAW
+--
+/entry : display the drawing screen
+
+halign=center
+valign=top
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
