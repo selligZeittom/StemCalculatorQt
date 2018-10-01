@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>230</y>
+      <w>1040</w>
+      <h>530</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>560</y>
+      <w>90</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Drawing
+halign=center
+valign=center
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>560</y>
+      <w>90</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Computing
+halign=center
+valign=center
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>660</y>
+      <w>90</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Database
+halign=center
+valign=center
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
