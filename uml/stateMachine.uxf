@@ -5,7 +5,7 @@
     <id>UMLSpecialState</id>
     <coordinates>
       <x>630</x>
-      <y>110</y>
+      <y>100</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -16,7 +16,7 @@
     <id>Relation</id>
     <coordinates>
       <x>630</x>
-      <y>120</y>
+      <y>110</y>
       <w>30</w>
       <h>100</h>
     </coordinates>
@@ -27,7 +27,7 @@
     <id>UMLState</id>
     <coordinates>
       <x>520</x>
-      <y>200</y>
+      <y>190</y>
       <w>250</w>
       <h>100</h>
     </coordinates>
@@ -43,7 +43,7 @@ valign=top</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>790</x>
-      <y>620</y>
+      <y>610</y>
       <w>290</w>
       <h>90</h>
     </coordinates>
@@ -60,7 +60,7 @@ symbol=substate</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>520</x>
-      <y>370</y>
+      <y>360</y>
       <w>250</w>
       <h>100</h>
     </coordinates>
@@ -75,7 +75,7 @@ valign=top</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>630</x>
-      <y>290</y>
+      <y>280</y>
       <w>80</w>
       <h>100</h>
     </coordinates>
@@ -87,7 +87,7 @@ EV_INIT</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>390</x>
-      <y>460</y>
+      <y>450</y>
       <w>190</w>
       <h>190</h>
     </coordinates>
@@ -99,7 +99,7 @@ EV_DRAW</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>710</x>
-      <y>460</y>
+      <y>450</y>
       <w>250</w>
       <h>180</h>
     </coordinates>
@@ -111,7 +111,7 @@ EV_COMPUTE</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>500</x>
-      <y>460</y>
+      <y>450</y>
       <w>120</w>
       <h>230</h>
     </coordinates>
@@ -123,7 +123,7 @@ EV_MENU</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>680</x>
-      <y>460</y>
+      <y>450</y>
       <w>130</w>
       <h>230</h>
     </coordinates>
@@ -135,7 +135,7 @@ EV_MENU</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>270</x>
-      <y>630</y>
+      <y>620</y>
       <w>240</w>
       <h>80</h>
     </coordinates>
@@ -147,5 +147,46 @@ halign=center
 valign=top
 symbol=substate</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>490</x>
+      <y>850</y>
+      <w>290</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ST_DATABASE
+--
+/entry : display the database screen
+
+halign=center
+valign=top
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>450</y>
+      <w>70</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+EV_DB</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>450</y>
+      <w>90</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=EV_MENU</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
   </element>
 </diagram>

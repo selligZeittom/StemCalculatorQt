@@ -16,7 +16,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>490</x>
-      <y>560</y>
+      <y>660</y>
       <w>90</w>
       <h>50</h>
     </coordinates>
@@ -29,8 +29,8 @@ valign=center
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>820</x>
-      <y>560</y>
+      <x>810</x>
+      <y>660</y>
       <w>90</w>
       <h>50</h>
     </coordinates>
@@ -43,12 +43,13 @@ valign=center
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>670</x>
+      <x>640</x>
       <y>660</y>
-      <w>90</w>
+      <w>110</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>Database
+management
 halign=center
 valign=center
 </panel_attributes>
