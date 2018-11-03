@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>11</zoom_level>
+  <zoom_level>13</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1441</x>
-      <y>143</y>
-      <w>1001</w>
-      <h>385</h>
+      <x>1859</x>
+      <y>169</y>
+      <w>1183</w>
+      <h>455</h>
     </coordinates>
     <panel_attributes>Controller
 --
@@ -24,10 +24,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>572</x>
-      <y>77</y>
-      <w>715</w>
-      <h>737</h>
+      <x>832</x>
+      <y>91</y>
+      <w>845</w>
+      <h>871</h>
     </coordinates>
     <panel_attributes>Data
 --
@@ -45,10 +45,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2596</x>
-      <y>99</y>
-      <w>715</w>
-      <h>715</h>
+      <x>3224</x>
+      <y>117</y>
+      <w>845</w>
+      <h>845</h>
     </coordinates>
     <panel_attributes>UserInterface
 --
@@ -67,10 +67,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2893</x>
-      <y>33</y>
-      <w>110</w>
-      <h>33</h>
+      <x>3575</x>
+      <y>39</y>
+      <w>130</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>QTWidget
 transparency=0
@@ -80,10 +80,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2937</x>
-      <y>55</y>
-      <w>33</w>
-      <h>66</h>
+      <x>3627</x>
+      <y>65</y>
+      <w>39</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 layer=2</panel_attributes>
@@ -92,10 +92,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2431</x>
-      <y>286</y>
-      <w>187</w>
-      <h>33</h>
+      <x>3029</x>
+      <y>338</y>
+      <w>221</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
@@ -103,10 +103,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1276</x>
-      <y>286</y>
-      <w>187</w>
-      <h>33</h>
+      <x>1664</x>
+      <y>338</y>
+      <w>221</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
@@ -114,10 +114,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1023</x>
-      <y>803</y>
-      <w>1870</w>
-      <h>154</h>
+      <x>1365</x>
+      <y>949</y>
+      <w>2210</w>
+      <h>182</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>1680.0;10.0;1680.0;120.0;10.0;120.0;10.0;10.0</additional_attributes>
@@ -125,10 +125,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>2552</x>
+      <x>3172</x>
       <y>0</y>
-      <w>803</w>
-      <h>880</h>
+      <w>949</w>
+      <h>1040</h>
     </coordinates>
     <panel_attributes>View
 bg=gray
@@ -139,10 +139,10 @@ layer=0</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>0</x>
+      <x>156</x>
       <y>0</y>
-      <w>1331</w>
-      <h>880</h>
+      <w>1573</w>
+      <h>1040</h>
     </coordinates>
     <panel_attributes>Model
 bg=gray
@@ -153,10 +153,10 @@ layer=0</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1397</x>
+      <x>1807</x>
       <y>0</y>
-      <w>1089</w>
-      <h>880</h>
+      <w>1287</w>
+      <h>1040</h>
     </coordinates>
     <panel_attributes>Controller
 bg=gray
@@ -167,10 +167,10 @@ layer=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>176</x>
-      <y>220</y>
-      <w>242</w>
-      <h>44</h>
+      <x>364</x>
+      <y>260</y>
+      <w>286</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>QPoint
 layer=1
@@ -183,10 +183,10 @@ transparency=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>176</x>
-      <y>286</y>
-      <w>242</w>
-      <h>44</h>
+      <x>364</x>
+      <y>338</y>
+      <w>286</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>QVector2D
 bg=white
@@ -199,10 +199,10 @@ transparency=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>99</x>
-      <y>187</y>
-      <w>99</w>
-      <h>143</h>
+      <x>273</x>
+      <y>221</y>
+      <w>117</w>
+      <h>169</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0;70.0;110.0</additional_attributes>
@@ -210,10 +210,10 @@ transparency=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>407</x>
-      <y>187</y>
-      <w>66</w>
-      <h>88</h>
+      <x>637</x>
+      <y>221</y>
+      <w>78</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
     <additional_attributes>40.0;10.0;40.0;60.0;10.0;60.0</additional_attributes>
@@ -221,12 +221,12 @@ transparency=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>176</x>
-      <y>374</y>
-      <w>297</w>
-      <h>165</h>
+      <x>364</x>
+      <y>442</y>
+      <w>351</w>
+      <h>195</h>
     </coordinates>
-    <panel_attributes>BikeGeometry
+    <panel_attributes>Bike
 --
 - name : QString
 - stack : int
@@ -242,10 +242,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>176</x>
-      <y>561</y>
-      <w>297</w>
-      <h>99</h>
+      <x>364</x>
+      <y>663</y>
+      <w>351</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>&lt;&lt;struct&gt;&gt;
 DesiredPosition
@@ -261,10 +261,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>462</x>
-      <y>616</y>
-      <w>132</w>
-      <h>44</h>
+      <x>702</x>
+      <y>728</y>
+      <w>156</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1</panel_attributes>
@@ -273,10 +273,10 @@ m1=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>33</x>
-      <y>715</y>
-      <w>297</w>
-      <h>99</h>
+      <x>195</x>
+      <y>845</y>
+      <w>351</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>Stem
 --
@@ -291,10 +291,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>462</x>
-      <y>451</y>
-      <w>132</w>
-      <h>44</h>
+      <x>702</x>
+      <y>533</y>
+      <w>156</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1</panel_attributes>
@@ -303,10 +303,10 @@ m1=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>440</y>
-      <w>110</w>
-      <h>297</h>
+      <x>260</x>
+      <y>520</y>
+      <w>130</w>
+      <h>351</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1</panel_attributes>
@@ -315,10 +315,10 @@ m1=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1892</x>
-      <y>55</y>
-      <w>110</w>
-      <h>33</h>
+      <x>2392</x>
+      <y>65</y>
+      <w>130</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>ISM :: XF
 bg=magenta
@@ -329,10 +329,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1936</x>
-      <y>77</y>
-      <w>33</w>
-      <h>88</h>
+      <x>2444</x>
+      <y>91</y>
+      <w>39</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -340,10 +340,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>11</x>
-      <y>55</y>
-      <w>506</w>
-      <h>143</h>
+      <x>169</x>
+      <y>65</y>
+      <w>598</w>
+      <h>169</h>
     </coordinates>
     <panel_attributes>UtilityVector
 --
@@ -357,10 +357,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>506</x>
-      <y>132</y>
-      <w>88</w>
-      <h>33</h>
+      <x>754</x>
+      <y>156</y>
+      <w>104</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
