@@ -9,23 +9,25 @@
 #include <QGuiApplication>
 
 //define some dimensions
-#define BTN_WIDTH 200
-#define BTN_HEIGHT 60
-#define BTN_OFFSET_X 200
-#define BTN_OFFSET_y 200
-class GUI : public QWidget
+#define BTN_HEIGHT 80
+#define BTN_NUMBER 3
+
+class GUI_Menu : public QWidget
 {
     Q_OBJECT
 public:
-    explicit GUI(QWidget* parent = 0);
-    virtual ~GUI();
+    explicit GUI_Menu(QWidget* parent = 0);
+    virtual ~GUI_Menu();
     void initRelations();
+    int getScreenHeight() const;
+    int getScreenWidth() const;
 
 
 private:
     //screen size attributes
-    int width;
-    int height;
+    int screenWidth;
+    int screenHeight;
+    int btnWidth;
 
     //buttons
     QPushButton* dbManagementButton;
