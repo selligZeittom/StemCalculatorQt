@@ -11,7 +11,6 @@
 #include "gui_menu.h"
 
 //define some dimensions for buttons
-#define y_OFFSET 80
 #define BTN1_WIDTH 200
 #define BTN1_HEIGHT 60
 #define BTN1_OFFSET_X 200
@@ -24,19 +23,20 @@
 #define LABEL_OFFSET_X2 (screenWidth - LABEL_WIDTH/2)
 #define LABEL_OFFSET_Y 200
 
+class ScreenManager;
+
 class GUI_Drawing : public QWidget
 {
     Q_OBJECT
 public:
-    explicit GUI_Drawing(GUI_Menu* parent = 0);
+    explicit GUI_Drawing(QWidget* parent = 0);
     virtual ~GUI_Drawing();
-    void initRelations();
+    void initRelations(ScreenManager* screenManager);
 
 
 private:
-    //screen size attributes, initialized by the parent
-    int screenWidth;
-    int screenHeight;
+    //the screen manager
+    ScreenManager* theScreenManager;
 
     //style sheet for objects
     QString btnStylesheet;

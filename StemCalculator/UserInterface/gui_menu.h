@@ -11,6 +11,11 @@
 //define some dimensions
 #define BTN_HEIGHT 80
 #define BTN_NUMBER 3
+#define BTN_WIDTH 250
+#define BTN_SPACE 200
+#define BTN_Y_POS 200
+
+class ScreenManager;
 
 class GUI_Menu : public QWidget
 {
@@ -18,16 +23,14 @@ class GUI_Menu : public QWidget
 public:
     explicit GUI_Menu(QWidget* parent = 0);
     virtual ~GUI_Menu();
-    void initRelations();
-    int getScreenHeight() const;
-    int getScreenWidth() const;
-
+    void initRelations(ScreenManager* screenManager);
 
 private:
-    //screen size attributes
-    int screenWidth;
-    int screenHeight;
-    int btnWidth;
+    //the screen manager
+    ScreenManager* theScreenManager;
+
+    //style sheet for objects
+    QString btnStylesheet;
 
     //buttons
     QPushButton* dbManagementButton;

@@ -15,9 +15,11 @@ TEMPLATE = app
 SOURCES += main.cpp \
     Model/bike.cpp \
     UserInterface/gui_drawing.cpp \
-    UserInterface/gui_menu.cpp
+    UserInterface/gui_menu.cpp \
+    UserInterface/screenmanager.cpp
 
 HEADERS  += \
     Model/bike.h \
     UserInterface/gui_drawing.h \
-    UserInterface/gui_menu.h
+    UserInterface/gui_menu.h \
+    UserInterface/screenmanager.h

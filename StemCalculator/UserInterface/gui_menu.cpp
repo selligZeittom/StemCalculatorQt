@@ -1,22 +1,11 @@
 #include "gui_menu.h"
+#include "screenmanager.h"
 
 GUI_Menu::GUI_Menu(QWidget *parent)
 {
-    //get the dimension of the screen
-    QScreen *screen = QGuiApplication::primaryScreen();
-    QRect  screenGeometry = screen->geometry();
+    this->theScreenManager = NULL;
 
-    this->screenHeight = screenGeometry.height()-30;
-    this->screenWidth = screenGeometry.width();
-
-    this->btnWidth = screenWidth/BTN_NUMBER;
-
-    this->setWindowTitle("Stem Calculator V1.0");
-    this->setVisible(true);
-    this->showMaximized(); //full screen
-
-    //to delete later...
-    initRelations();
+    btnStylesheet = "QPushButton { background-color : white; border: 1px solid gray; border-radius: 10px; color : black;  font: bold 14px; }";
 }
 
 GUI_Menu::~GUI_Menu()
@@ -24,25 +13,32 @@ GUI_Menu::~GUI_Menu()
 
 }
 
-void GUI_Menu::initRelations()
+void GUI_Menu::initRelations(ScreenManager *screenManager)
 {
+
+    //set the screenManager
+    this->theScreenManager = screenManager;
+
+    this->setWindowTitle("Stem Calculator V1.0");
+    this->setGeometry(theScreenManager->xOffset, theScreenManager->yOffset, theScreenManager->APP_WIDTH, theScreenManager->APP_HEIGHT);
+    this->setVisible(true);
 
     //init the buttons
     this->dbManagementButton = new QPushButton(this);
-    dbManagementButton->setGeometry(0, screenHeight-BTN_HEIGHT, btnWidth, BTN_HEIGHT);
-    dbManagementButton->setStyleSheet("QPushButton { font: bold 14px; background-color : gray; border: 2px solid black; }");
+    dbManagementButton->setGeometry(BTN_SPACE, theScreenManager->APP_HEIGHT-BTN_Y_POS, BTN_WIDTH, BTN_HEIGHT);
+    dbManagementButton->setStyleSheet(btnStylesheet);
     dbManagementButton->setText("Database");
     dbManagementButton->show();
 
     this->drawingScreenButton = new QPushButton(this);
-    drawingScreenButton->setGeometry(btnWidth, screenHeight-BTN_HEIGHT, btnWidth, BTN_HEIGHT);
-    drawingScreenButton->setStyleSheet("QPushButton {font: bold 14px; background-color : gray; border: 2px solid black; color : black; }");
+    drawingScreenButton->setGeometry(theScreenManager->APP_WIDTH/2-BTN_WIDTH/2, theScreenManager->APP_HEIGHT-BTN_Y_POS, BTN_WIDTH, BTN_HEIGHT);
+    drawingScreenButton->setStyleSheet(btnStylesheet);
     drawingScreenButton->setText("Drawing");
     drawingScreenButton->show();
 
     this->computingScreenButton = new QPushButton(this);
-    computingScreenButton->setGeometry(btnWidth*2, screenHeight-BTN_HEIGHT, btnWidth, BTN_HEIGHT);
-    computingScreenButton->setStyleSheet("QPushButton { font: bold 14px; background-color : gray; border: 2px solid black; color : black; }");
+    computingScreenButton->setGeometry(theScreenManager->APP_WIDTH-BTN_WIDTH-BTN_SPACE, theScreenManager->APP_HEIGHT-BTN_Y_POS, BTN_WIDTH, BTN_HEIGHT);
+    computingScreenButton->setStyleSheet(btnStylesheet);
     computingScreenButton->setText("Computing");
     computingScreenButton->show();
 
@@ -50,18 +46,6 @@ void GUI_Menu::initRelations()
     connect(this->dbManagementButton, SIGNAL(clicked(bool)), this, SLOT(dbManagementButtonClicked()));
     connect(this->drawingScreenButton, SIGNAL(clicked(bool)), this, SLOT(drawingScreenButtonClicked()));
     connect(this->computingScreenButton, SIGNAL(clicked(bool)), this, SLOT(computingScreenButtonClicked()));
-}
-
-
-
-int GUI_Menu::getScreenHeight() const
-{
-    return this->screenHeight;
-}
-
-int GUI_Menu::getScreenWidth() const
-{
-    return this->screenWidth;
 }
 
 /*********************************************************************************************************************
