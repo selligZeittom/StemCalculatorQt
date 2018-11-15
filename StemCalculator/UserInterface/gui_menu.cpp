@@ -4,7 +4,6 @@
 GUI_Menu::GUI_Menu(QWidget *parent)
 {
     this->theScreenManager = NULL;
-
     btnStylesheet = "QPushButton { background-color : white; border: 1px solid gray; border-radius: 10px; color : black;  font: bold 14px; }";
 }
 
@@ -56,14 +55,20 @@ void GUI_Menu::initRelations(ScreenManager *screenManager)
 void GUI_Menu::dbManagementButtonClicked()
 {
     std::cout<<"[GUI] : database management button clicked" << std::endl;
+    //forward to push an event
+    theScreenManager->btnPressed(BTN_ID_DATABASE);
 }
 
 void GUI_Menu::drawingScreenButtonClicked()
 {
     std::cout<<"[GUI] : drawing screen button clicked" << std::endl;
+    //forward to push an event
+    theScreenManager->btnPressed(BTN_ID_DRAWING);
 }
 
 void GUI_Menu::computingScreenButtonClicked()
 {
     std::cout<<"[GUI] : computing screen button clicked" << std::endl;
+    //forward to push an event
+    theScreenManager->btnPressed(BTN_ID_COMPUTING);
 }

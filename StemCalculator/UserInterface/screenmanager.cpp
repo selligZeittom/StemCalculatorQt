@@ -37,6 +37,34 @@ void ScreenManager::initRelations(GUI_Drawing *drawingGui, GUI_Menu *menuGui, GU
     this->theDatabaseWindow = databaseGui;
 }
 
+void ScreenManager::btnPressed(int btnID)
+{
+    //create a new event
+    XFEvent* ev = new XFEvent();
+
+    switch (btnID) {
+    case BTN_ID_MENU:
+        ev->setID((int) EV_GOTO_MENU);
+        ev->setTarget(this);
+        break;
+    case BTN_ID_DRAWING:
+        ev->setID((int) EV_GOTO_DRAWING);
+        ev->setTarget(this);
+        break;
+    case BTN_ID_COMPUTING:
+        ev->setID((int) EV_GOTO_COMPUTING);
+        ev->setTarget(this);
+        break;
+    case BTN_ID_DATABASE:
+        ev->setID((int) EV_GOTO_DATABASE);
+        ev->setTarget(this);
+        break;
+    }
+
+    //push the event into the ism
+    XF::getInstance().pushEvent(ev);
+}
+
 bool ScreenManager::processEvent(XFEvent *event)
 {
     //used to say if the event is used or not
@@ -47,6 +75,7 @@ bool ScreenManager::processEvent(XFEvent *event)
 
     /*
      * /onTransition:
+     *
      */
     switch (currentStateISM)
     {
@@ -54,28 +83,40 @@ bool ScreenManager::processEvent(XFEvent *event)
         //if the computing button is pressed
         if(event->getID() == EV_GOTO_COMPUTING)
         {
-
+            currentStateISM = ST_COMPUTING_WINDOW;
         }
         //if the drawing button is pressed
         else if(event->getID() == EV_GOTO_DRAWING)
         {
-
+            currentStateISM = ST_DRAWING_WINDOW;
         }
         //if the database button is pressed
         else if (event->getID() == EV_GOTO_DATABASE)
         {
-
+            currentStateISM = ST_DATABASE_WINDOW;
         }
 
         break;
     case ST_DRAWING_WINDOW:
-
+        //if the return to menu button is pressed
+        if(event->getID() == EV_GOTO_MENU)
+        {
+            currentStateISM = ST_MENU_WINDOW;
+        }
         break;
     case ST_COMPUTING_WINDOW:
-
+        //if the return to menu button is pressed
+        if(event->getID() == EV_GOTO_MENU)
+        {
+            currentStateISM = ST_MENU_WINDOW;
+        }
         break;
     case ST_DATABASE_WINDOW:
-
+        //if the return to menu button is pressed
+        if(event->getID() == EV_GOTO_MENU)
+        {
+            currentStateISM = ST_MENU_WINDOW;
+        }
         break;
     }
 
@@ -85,42 +126,46 @@ bool ScreenManager::processEvent(XFEvent *event)
 
         /*
          * /onEntry:
+         *
          */
         switch (currentStateISM)
         {
         case ST_MENU_WINDOW:
-
+            theMenuWindow->show();
             break;
         case ST_DRAWING_WINDOW:
-
+            theDrawingWindow->show();
             break;
         case ST_COMPUTING_WINDOW:
-
+            theComputingWindow->show();
             break;
         case ST_DATABASE_WINDOW:
-
+            theDatabaseWindow->show();
             break;
         }
 
         /*
          * /onExit:
+         *
          */
         switch (oldStateISM)
         {
         case ST_MENU_WINDOW:
-
+            theMenuWindow->hide();
             break;
         case ST_DRAWING_WINDOW:
-
+            theDrawingWindow->hide();
             break;
         case ST_COMPUTING_WINDOW:
-
+            theComputingWindow->hide();
             break;
         case ST_DATABASE_WINDOW:
-
+            theDatabaseWindow->hide();
             break;
         }
     }
+
+    return processed;
 }
 
 

@@ -33,6 +33,9 @@ public:
     virtual ~GUI_Drawing();
     void initRelations(ScreenManager* screenManager);
 
+public slots:
+    void menuButtonClicked();
+
 
 private:
     //the screen manager
@@ -47,6 +50,7 @@ private:
     QPushButton* updateResultButton;
     QPushButton* saveGeometryButton;
     QPushButton* loadGeometryButton;
+    QPushButton* menuButton;
     QLabel* reachLabel;
     QLabel* stackLabel;
     QLabel* headAngleLabel;

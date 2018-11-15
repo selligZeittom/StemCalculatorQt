@@ -4,6 +4,7 @@
 GUI_Drawing::GUI_Drawing(QWidget *parent)
 {
     this->theScreenManager = NULL;
+    this->menuButton = NULL;
 
     btnStylesheet = "QPushButton { background-color : grey; border: 1px solid gray; border-radius: 10px; color : black; font: bold 14px; }";
 }
@@ -21,6 +22,7 @@ void GUI_Drawing::initRelations(ScreenManager* screenManager)
     this->setWindowTitle("Stem Calculator V1.0");
     this->setGeometry(screenManager->xOffset,screenManager->yOffset, screenManager->APP_WIDTH, screenManager->APP_HEIGHT);
     this->setVisible(true);
+    this->hide();
 
     this->updateResultButton = new QPushButton(this);
     updateResultButton->setGeometry(BTN1_OFFSET_X, theScreenManager->APP_HEIGHT-BTN1_OFFSET_Y, BTN1_WIDTH, BTN1_HEIGHT);
@@ -39,5 +41,17 @@ void GUI_Drawing::initRelations(ScreenManager* screenManager)
     loadGeometryButton->setStyleSheet(btnStylesheet);
     loadGeometryButton->setText("load geometry");
     loadGeometryButton->show();
+
+    this->menuButton = new QPushButton(this);
+    menuButton->setGeometry(50, 50, 100, 40);
+    menuButton->setText("back to menu");
+    menuButton->show();
+
+    connect(this->menuButton, SIGNAL(clicked(bool)), this, SLOT(menuButtonClicked()));
+}
+
+void GUI_Drawing::menuButtonClicked()
+{
+    theScreenManager->btnPressed(BTN_ID_MENU);
 }
 

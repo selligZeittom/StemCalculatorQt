@@ -43,5 +43,29 @@ void Factory::build()
 
 void Factory::destroy()
 {
-
+    if(theComputingWindow)
+    {
+        delete theComputingWindow;
+        theComputingWindow = NULL;
+    }
+    if(theMenuWindow)
+    {
+        delete theMenuWindow;
+        theMenuWindow = NULL;
+    }
+    if(theDatabaseWindow)
+    {
+        delete theDatabaseWindow;
+        theDatabaseWindow = NULL;
+    }
+    if(theDrawingWindow)
+    {
+        delete theDrawingWindow;
+        theDrawingWindow = NULL;
+    }
+    if(theScreenManager)
+    {
+        delete theScreenManager;
+        theScreenManager = NULL;
+    }
 }

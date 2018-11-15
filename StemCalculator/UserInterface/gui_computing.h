@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QWidget>
+#include <QPushButton>
 
 class ScreenManager;
 
@@ -18,6 +19,15 @@ public:
 private:
     //the screen manager
     ScreenManager* theScreenManager;
+
+    //style sheet for objects
+    QString btnStylesheet;
+
+    //graphical objects
+    QPushButton* menuButton;
+
+public slots:
+    void menuButtonClicked();
 };
 
 #endif // GUI_COMPUTING_H
