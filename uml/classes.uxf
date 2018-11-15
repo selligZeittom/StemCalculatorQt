@@ -24,14 +24,14 @@ fontsize=10
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>13</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1703</x>
-      <y>169</y>
-      <w>1183</w>
-      <h>455</h>
+      <x>1310</x>
+      <y>140</y>
+      <w>910</w>
+      <h>350</h>
     </coordinates>
     <panel_attributes>Controller
 --
@@ -48,10 +48,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>676</x>
-      <y>91</y>
-      <w>845</w>
-      <h>871</h>
+      <x>520</x>
+      <y>80</y>
+      <w>650</w>
+      <h>670</h>
     </coordinates>
     <panel_attributes>Data
 --
@@ -69,17 +69,17 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3068</x>
-      <y>130</y>
-      <w>377</w>
-      <h>286</h>
+      <x>2360</x>
+      <y>110</y>
+      <w>290</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>GUI_Menu
 --
 + GUI_Menu()
 + ~GUI_Menu()
 + initRelations(theScreenManager : ScreenManager*) : void
-+ displayMenu() : void
+
 
 
 bg=green
@@ -90,10 +90,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3224</x>
-      <y>39</y>
-      <w>130</w>
-      <h>39</h>
+      <x>2480</x>
+      <y>40</y>
+      <w>100</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>QTWidget
 transparency=0
@@ -103,10 +103,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3276</x>
-      <y>403</y>
-      <w>195</w>
-      <h>221</h>
+      <x>2520</x>
+      <y>320</y>
+      <w>150</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1
@@ -116,10 +116,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1508</x>
-      <y>338</y>
-      <w>221</w>
-      <h>39</h>
+      <x>1160</x>
+      <y>270</y>
+      <w>170</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
@@ -127,10 +127,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1209</x>
-      <y>949</y>
-      <w>2210</w>
-      <h>182</h>
+      <x>930</x>
+      <y>740</y>
+      <w>1700</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>1680.0;40.0;1680.0;120.0;10.0;120.0;10.0;10.0</additional_attributes>
@@ -138,10 +138,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>3016</x>
-      <y>0</y>
-      <w>1261</w>
-      <h>1040</h>
+      <x>2320</x>
+      <y>10</y>
+      <w>1330</w>
+      <h>800</h>
     </coordinates>
     <panel_attributes>View
 bg=gray
@@ -153,9 +153,9 @@ layer=0</panel_attributes>
     <id>UMLPackage</id>
     <coordinates>
       <x>0</x>
-      <y>0</y>
-      <w>1573</w>
-      <h>1040</h>
+      <y>10</y>
+      <w>1210</w>
+      <h>800</h>
     </coordinates>
     <panel_attributes>Model
 bg=gray
@@ -166,10 +166,10 @@ layer=0</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1651</x>
-      <y>0</y>
-      <w>1287</w>
-      <h>1040</h>
+      <x>1270</x>
+      <y>10</y>
+      <w>990</w>
+      <h>800</h>
     </coordinates>
     <panel_attributes>Controller
 bg=gray
@@ -180,10 +180,10 @@ layer=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>208</x>
-      <y>260</y>
-      <w>286</w>
-      <h>52</h>
+      <x>160</x>
+      <y>210</y>
+      <w>220</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>QPoint
 layer=1
@@ -196,10 +196,10 @@ transparency=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>208</x>
-      <y>338</y>
-      <w>286</w>
-      <h>52</h>
+      <x>160</x>
+      <y>270</y>
+      <w>220</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>QVector2D
 bg=white
@@ -212,10 +212,10 @@ transparency=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>117</x>
-      <y>221</y>
-      <w>117</w>
-      <h>169</h>
+      <x>90</x>
+      <y>180</y>
+      <w>90</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0;70.0;110.0</additional_attributes>
@@ -223,10 +223,10 @@ transparency=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>481</x>
-      <y>221</y>
-      <w>78</w>
-      <h>104</h>
+      <x>370</x>
+      <y>180</y>
+      <w>60</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
     <additional_attributes>40.0;10.0;40.0;60.0;10.0;60.0</additional_attributes>
@@ -234,10 +234,10 @@ transparency=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>208</x>
-      <y>442</y>
-      <w>351</w>
-      <h>195</h>
+      <x>160</x>
+      <y>350</y>
+      <w>270</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>Bike
 --
@@ -255,10 +255,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>208</x>
-      <y>663</y>
-      <w>351</w>
-      <h>117</h>
+      <x>160</x>
+      <y>520</y>
+      <w>270</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>&lt;&lt;struct&gt;&gt;
 DesiredPosition
@@ -274,10 +274,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>546</x>
-      <y>728</y>
-      <w>156</w>
-      <h>39</h>
+      <x>420</x>
+      <y>570</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1</panel_attributes>
@@ -286,10 +286,10 @@ m1=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>39</x>
-      <y>845</y>
-      <w>351</w>
-      <h>117</h>
+      <x>30</x>
+      <y>660</y>
+      <w>270</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Stem
 --
@@ -304,10 +304,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>546</x>
-      <y>533</y>
-      <w>156</w>
-      <h>39</h>
+      <x>420</x>
+      <y>420</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1</panel_attributes>
@@ -316,10 +316,10 @@ m1=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>104</x>
-      <y>520</y>
-      <w>130</w>
-      <h>351</h>
+      <x>80</x>
+      <y>410</y>
+      <w>100</w>
+      <h>270</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1</panel_attributes>
@@ -328,10 +328,10 @@ m1=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2236</x>
-      <y>65</y>
-      <w>130</w>
-      <h>39</h>
+      <x>1720</x>
+      <y>60</y>
+      <w>100</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>ISM :: XF
 bg=magenta
@@ -342,10 +342,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2288</x>
-      <y>91</y>
-      <w>39</w>
-      <h>104</h>
+      <x>1760</x>
+      <y>80</y>
+      <w>30</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -353,10 +353,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>13</x>
-      <y>65</y>
-      <w>598</w>
-      <h>169</h>
+      <x>10</x>
+      <y>60</y>
+      <w>460</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>UtilityVector
 --
@@ -370,10 +370,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>598</x>
-      <y>156</y>
-      <w>104</w>
-      <h>39</h>
+      <x>460</x>
+      <y>130</y>
+      <w>80</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
@@ -381,18 +381,26 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3276</x>
-      <y>598</y>
-      <w>793</w>
-      <h>286</h>
+      <x>2520</x>
+      <y>470</y>
+      <w>610</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>ScreenManager
 --
 + ScreenManager()
 + ~ScreenManager()
-+ initRelations(theGUImenu : GUI_Menu*, theGUIcomputing : GUI_Computing*, theGUIdrawing : GUI_Drawing*) : void
++ initRelations(theGUImenu : GUI_Menu*, theGUIcomputing : GUI_Computing*, theGUIdrawing : GUI_Drawing*,
+theGUIdatabase : GUI_Database*) : void
 
 + processEvent(ev* : XFEvent) : bool
+
++ displayMenuWindow() : void
++ displayComputingWindow() : void
++ displayDrawingWindow() : void
++ displayDatabaseWindow() : void
+
+
 
 bg=green
 transparency=50
@@ -402,10 +410,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3458</x>
-      <y>130</y>
-      <w>364</w>
-      <h>286</h>
+      <x>2660</x>
+      <y>110</y>
+      <w>280</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>GUI_Computing
 --
@@ -421,10 +429,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3835</x>
-      <y>130</y>
-      <w>416</w>
-      <h>286</h>
+      <x>2950</x>
+      <y>110</y>
+      <w>320</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>GUI_Drawing
 --
@@ -440,10 +448,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3627</x>
-      <y>65</y>
-      <w>39</w>
-      <h>91</h>
+      <x>2790</x>
+      <y>60</y>
+      <w>30</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 layer=2</panel_attributes>
@@ -452,10 +460,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3575</x>
-      <y>39</y>
-      <w>130</w>
-      <h>39</h>
+      <x>2750</x>
+      <y>40</y>
+      <w>100</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>QTWidget
 transparency=0
@@ -465,10 +473,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4030</x>
-      <y>65</y>
-      <w>39</w>
-      <h>91</h>
+      <x>3100</x>
+      <y>60</y>
+      <w>30</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 layer=2</panel_attributes>
@@ -477,10 +485,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3978</x>
-      <y>39</y>
-      <w>130</w>
-      <h>39</h>
+      <x>3060</x>
+      <y>40</y>
+      <w>100</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>QTWidget
 transparency=0
@@ -490,10 +498,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3913</x>
-      <y>403</y>
-      <w>169</w>
-      <h>221</h>
+      <x>3010</x>
+      <y>320</y>
+      <w>130</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1
@@ -503,10 +511,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3640</x>
-      <y>403</y>
-      <w>39</w>
-      <h>221</h>
+      <x>2800</x>
+      <y>320</y>
+      <w>30</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1
@@ -516,10 +524,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3731</x>
-      <y>403</y>
-      <w>39</w>
-      <h>221</h>
+      <x>2870</x>
+      <y>320</y>
+      <w>30</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1
@@ -529,10 +537,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3172</x>
-      <y>403</y>
-      <w>130</w>
-      <h>377</h>
+      <x>2440</x>
+      <y>320</y>
+      <w>100</w>
+      <h>290</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1
@@ -542,23 +550,23 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4056</x>
-      <y>403</y>
-      <w>143</w>
-      <h>377</h>
+      <x>3120</x>
+      <y>320</y>
+      <w>110</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 m1=1
 layer=2</panel_attributes>
-    <additional_attributes>10.0;270.0;90.0;270.0;90.0;10.0</additional_attributes>
+    <additional_attributes>10.0;200.0;90.0;200.0;90.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3614</x>
-      <y>949</y>
-      <w>143</w>
-      <h>26</h>
+      <x>2780</x>
+      <y>740</y>
+      <w>110</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>XF::ISM
 transparency=0
@@ -569,13 +577,83 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3666</x>
-      <y>871</y>
-      <w>39</w>
-      <h>104</h>
+      <x>2820</x>
+      <y>680</y>
+      <w>30</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 layer=2</panel_attributes>
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3300</x>
+      <y>450</y>
+      <w>320</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>GUI_Database
+--
++ GUI_Data()
++ ~GUI_Data()
++ initRelations(theScreenManager : ScreenManager*) : void
+
+bg=green
+transparency=50
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3120</x>
+      <y>560</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
+m1=1
+layer=2</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3120</x>
+      <y>630</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
+m1=1
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3410</x>
+      <y>380</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>QTWidget
+transparency=0
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3450</x>
+      <y>400</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
   </element>
 </diagram>

@@ -16,10 +16,23 @@ SOURCES += main.cpp \
     Model/bike.cpp \
     UserInterface/gui_drawing.cpp \
     UserInterface/gui_menu.cpp \
-    UserInterface/screenmanager.cpp
+    UserInterface/screenmanager.cpp \
+    UserInterface/gui_computing.cpp \
+    factory.cpp \
+    UserInterface/gui_database.cpp \
+    XF/xf.cpp \
+    XF/xfevent.cpp \
+    XF/xftimer.cpp
 
 HEADERS  += \
     Model/bike.h \
     UserInterface/gui_drawing.h \
     UserInterface/gui_menu.h \
-    UserInterface/screenmanager.h
+    UserInterface/screenmanager.h \
+    UserInterface/gui_computing.h \
+    factory.h \
+    UserInterface/gui_database.h \
+    XF/ism.h \
+    XF/xf.h \
+    XF/xfevent.h \
+    XF/xftimer.h
