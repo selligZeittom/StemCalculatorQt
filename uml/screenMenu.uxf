@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.2">
+<diagram program="umlet" version="14.3.0">
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>210</x>
-      <y>230</y>
+      <x>50</x>
+      <y>190</y>
       <w>1040</w>
       <h>530</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>490</x>
-      <y>660</y>
+      <x>330</x>
+      <y>620</y>
       <w>90</w>
       <h>50</h>
     </coordinates>
@@ -29,8 +29,8 @@ valign=center
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>810</x>
-      <y>660</y>
+      <x>650</x>
+      <y>620</y>
       <w>90</w>
       <h>50</h>
     </coordinates>
@@ -43,8 +43,8 @@ valign=center
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
-      <y>660</y>
+      <x>480</x>
+      <y>620</y>
       <w>110</w>
       <h>50</h>
     </coordinates>

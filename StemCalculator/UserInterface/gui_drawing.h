@@ -7,21 +7,28 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QString>
+#include <QGraphicsView>
+#include <QSlider>
+#include <QGraphicsScene>
+#include <QGraphicsLineItem>
+#include <QGraphicsTextItem>
+#include <QPen>
 
 #include "gui_menu.h"
 
 //define some dimensions for buttons
-#define BTN1_WIDTH 200
-#define BTN1_HEIGHT 60
-#define BTN1_OFFSET_X 200
-#define BTN1_OFFSET_Y 200
+#define BTN1_WIDTH 150
+#define BTN1_HEIGHT 50
+#define BTN1_OFFSET_X_RIGHT 50
+#define BTN1_OFFSET_Y 15
 
-//define some dimensions for buttons
-#define LABEL_WIDTH 200
-#define LABEL_HEIGHT 60
-#define LABEL_OFFSET_X1 50
-#define LABEL_OFFSET_X2 (screenWidth - LABEL_WIDTH/2)
-#define LABEL_OFFSET_Y 200
+//define some dimensions for labels
+#define LABEL_WIDTH 150
+#define LABEL_HEIGHT 50
+#define LABEL_Y_OFFSET 20
+
+//define some dimensions for the graphicalView
+#define OFFSET_VIEW 5
 
 class ScreenManager;
 
@@ -38,6 +45,9 @@ public slots:
 
 
 private:
+    //offset between components
+    int yOffset;
+
     //the screen manager
     ScreenManager* theScreenManager;
 
@@ -47,6 +57,8 @@ private:
     QString lineEditStylesheet;
 
     //graphical objects
+    QGraphicsView* drawingView;
+    QGraphicsScene* scnView;
     QPushButton* updateResultButton;
     QPushButton* saveGeometryButton;
     QPushButton* loadGeometryButton;
@@ -71,6 +83,10 @@ private:
     QLineEdit* bikeNameLineEdit;
     QLineEdit* handlebarXLineEdit;
     QLineEdit* handlebarYLineEdit;
+    QSlider* angleSlider;
+    QSlider* lengthSlider;
+    QSlider* spacerHeightSlider;
+    QSlider* zoomSlider;
 
 
 

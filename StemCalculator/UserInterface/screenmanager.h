@@ -52,7 +52,7 @@ private:
     int xOffset;
     int yOffset;
     const int APP_WIDTH = 1800;
-    const int APP_HEIGHT = 1000;
+    const int APP_HEIGHT = 900;
 
     //states of the ISM
     enum STATE_SCREEN_MANAGER
