@@ -21,6 +21,7 @@ GUI_Drawing::GUI_Drawing(QWidget *parent)
     this->handlebarYLabel = NULL;
     this->angleLabel = NULL;
     this->lengthLabel = NULL;
+    this->spacerLabel = NULL;
     this->displayAngleLabel = NULL;
     this->displayLengthLabel = NULL;
     this->reachLineEdit = NULL;
@@ -36,7 +37,7 @@ GUI_Drawing::GUI_Drawing(QWidget *parent)
     this->spacerHeightSlider = NULL;
     this->zoomSlider = NULL;
 
-    btnStylesheet = "QPushButton { background-color : white; border: 1px solid gray; border-radius: 5px; color : black; font: bold 12px; }";
+    btnStylesheet = "QPushButton { background-color : orange; border: 1px solid gray; border-radius: 5px; color : black; font: bold 12px; }";
     labelStylesheet = "QLabel { background-color: white; border: 1px solid gray; border-radius: 5px; color : black; font: bold 12px; }";
 }
 
@@ -65,34 +66,52 @@ void GUI_Drawing::initRelations(ScreenManager* screenManager)
     drawingView->show();
 
     this->updateResultButton = new QPushButton(this);
-    updateResultButton->setGeometry((theScreenManager->APP_WIDTH/2 - BTN1_WIDTH/2), theScreenManager->APP_HEIGHT-yOffset*4, BTN1_WIDTH, BTN1_HEIGHT);
+    updateResultButton->setGeometry((theScreenManager->APP_WIDTH/2 - BTN1_WIDTH/2), theScreenManager->APP_HEIGHT-(yOffset*1), BTN1_WIDTH, BTN1_HEIGHT);
     updateResultButton->setStyleSheet(btnStylesheet);
-    updateResultButton->setText("update results");
+    updateResultButton->setText("Update results");
     updateResultButton->show();
 
     this->saveGeometryButton = new QPushButton(this);
-    saveGeometryButton->setGeometry((theScreenManager->APP_WIDTH/2 - BTN1_WIDTH/2), theScreenManager->APP_HEIGHT-(yOffset*5 + BTN1_HEIGHT), BTN1_WIDTH, BTN1_HEIGHT);
+    saveGeometryButton->setGeometry((theScreenManager->APP_WIDTH/2 - BTN1_WIDTH/2), theScreenManager->APP_HEIGHT-(yOffset*2), BTN1_WIDTH, BTN1_HEIGHT);
     saveGeometryButton->setStyleSheet(btnStylesheet);
-    saveGeometryButton->setText("save geometry");
+    saveGeometryButton->setText("Save geometry");
     saveGeometryButton->show();
 
     this->loadGeometryButton = new QPushButton(this);
-    loadGeometryButton->setGeometry((theScreenManager->APP_WIDTH/2 - BTN1_WIDTH/2), theScreenManager->APP_HEIGHT-(yOffset*6 + 2*BTN1_HEIGHT), BTN1_WIDTH, BTN1_HEIGHT);
+    loadGeometryButton->setGeometry((theScreenManager->APP_WIDTH/2 - BTN1_WIDTH/2), theScreenManager->APP_HEIGHT-(yOffset*3), BTN1_WIDTH, BTN1_HEIGHT);
     loadGeometryButton->setStyleSheet(btnStylesheet);
-    loadGeometryButton->setText("load geometry");
+    loadGeometryButton->setText("Load geometry");
     loadGeometryButton->show();
 
-    this->menuButton = new QPushButton(this);
-    menuButton->setGeometry(theScreenManager->APP_WIDTH-(BTN1_WIDTH+BTN1_OFFSET_X_RIGHT), theScreenManager->APP_HEIGHT-yOffset*4, BTN1_WIDTH, BTN1_HEIGHT);
-    menuButton->setStyleSheet(btnStylesheet);
-    menuButton->setText("back to menu");
-    menuButton->show();
+    this->spacerLabel = new QLabel(this);
+    spacerLabel->setGeometry((theScreenManager->APP_WIDTH/2 - LABEL_WIDTH/2), theScreenManager->APP_HEIGHT-(yOffset*4), LABEL_WIDTH, LABEL_HEIGHT);
+    spacerLabel->setText("Spacer [mm]");
+    spacerLabel->setStyleSheet(labelStylesheet);
+    spacerLabel->show();
+
+    this->lengthLabel = new QLabel(this);
+    lengthLabel->setGeometry((theScreenManager->APP_WIDTH/2 - LABEL_WIDTH/2), theScreenManager->APP_HEIGHT-(yOffset*5),  LABEL_WIDTH, LABEL_HEIGHT);
+    lengthLabel->setText("Length [mm]");
+    lengthLabel->setStyleSheet(labelStylesheet);
+    lengthLabel->show();
+
+    this->angleLabel = new QLabel(this);
+    angleLabel->setGeometry((theScreenManager->APP_WIDTH/2 - LABEL_WIDTH/2),theScreenManager->APP_HEIGHT-(yOffset*6),  LABEL_WIDTH, LABEL_HEIGHT);
+    angleLabel->setText("Angle [deg]");
+    angleLabel->setStyleSheet(labelStylesheet);
+    angleLabel->show();
 
     this->bikeNameLabel = new QLabel(this);
-    bikeNameLabel->setGeometry((theScreenManager->APP_WIDTH/2 - LABEL_WIDTH/2),theScreenManager->APP_HEIGHT/2+yOffset,  LABEL_WIDTH, LABEL_HEIGHT);
+    bikeNameLabel->setGeometry((theScreenManager->APP_WIDTH/2 - LABEL_WIDTH/2),theScreenManager->APP_HEIGHT-(yOffset*7),  LABEL_WIDTH, LABEL_HEIGHT);
     bikeNameLabel->setText("Bike's name");
     bikeNameLabel->setStyleSheet(labelStylesheet);
     bikeNameLabel->show();
+
+    this->menuButton = new QPushButton(this);
+    menuButton->setGeometry(theScreenManager->APP_WIDTH-(BTN1_WIDTH+BTN1_OFFSET_X_RIGHT), theScreenManager->APP_HEIGHT-(yOffset*1), BTN1_WIDTH, BTN1_HEIGHT);
+    menuButton->setStyleSheet(btnStylesheet);
+    menuButton->setText("back to menu");
+    menuButton->show();
 
     //connect the buttons
     connect(this->menuButton, SIGNAL(clicked(bool)), this, SLOT(menuButtonClicked()));

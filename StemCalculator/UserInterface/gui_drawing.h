@@ -73,6 +73,7 @@ private:
     QLabel* handlebarYLabel;
     QLabel* angleLabel;
     QLabel* lengthLabel;
+    QLabel* spacerLabel;
     QLabel* displayAngleLabel;
     QLabel* displayLengthLabel;
     QLineEdit* reachLineEdit;
