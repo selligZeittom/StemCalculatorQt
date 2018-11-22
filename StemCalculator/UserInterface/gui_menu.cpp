@@ -54,21 +54,21 @@ void GUI_Menu::initRelations(ScreenManager *screenManager)
 
 void GUI_Menu::dbManagementButtonClicked()
 {
-    std::cout<<"[GUI] : database management button clicked" << std::endl;
+    std::cout<<"[GUI_Menu] : database management button clicked" << std::endl;
     //forward to push an event
     theScreenManager->btnPressed(BTN_ID_DATABASE);
 }
 
 void GUI_Menu::drawingScreenButtonClicked()
 {
-    std::cout<<"[GUI] : drawing screen button clicked" << std::endl;
+    std::cout<<"[GUI_Menu] : drawing screen button clicked" << std::endl;
     //forward to push an event
     theScreenManager->btnPressed(BTN_ID_DRAWING);
 }
 
 void GUI_Menu::computingScreenButtonClicked()
 {
-    std::cout<<"[GUI] : computing screen button clicked" << std::endl;
+    std::cout<<"[GUI_Menu] : computing screen button clicked" << std::endl;
     //forward to push an event
     theScreenManager->btnPressed(BTN_ID_COMPUTING);
 }

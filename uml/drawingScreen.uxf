@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>14</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>10</x>
-      <y>160</y>
-      <w>860</w>
-      <h>670</h>
+      <x>238</x>
+      <y>28</y>
+      <w>1204</w>
+      <h>938</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>170</y>
-      <w>840</w>
-      <h>370</h>
+      <x>252</x>
+      <y>42</y>
+      <w>1176</w>
+      <h>518</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>550</y>
-      <w>90</w>
-      <h>30</h>
+      <x>714</x>
+      <y>574</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Bike's name</panel_attributes>
     <additional_attributes/>
@@ -37,10 +37,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>550</y>
-      <w>410</w>
-      <h>30</h>
+      <x>854</x>
+      <y>574</y>
+      <w>574</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>bergamont fastlane mgn</panel_attributes>
     <additional_attributes/>
@@ -48,10 +48,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>550</y>
-      <w>160</w>
-      <h>30</h>
+      <x>252</x>
+      <y>574</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Reach [mm]</panel_attributes>
     <additional_attributes/>
@@ -59,10 +59,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>550</y>
-      <w>100</w>
-      <h>30</h>
+      <x>490</x>
+      <y>574</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>450</panel_attributes>
     <additional_attributes/>
@@ -70,10 +70,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>590</y>
-      <w>160</w>
-      <h>30</h>
+      <x>252</x>
+      <y>630</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Stack [mm]</panel_attributes>
     <additional_attributes/>
@@ -81,10 +81,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>590</y>
-      <w>100</w>
-      <h>30</h>
+      <x>490</x>
+      <y>630</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>620</panel_attributes>
     <additional_attributes/>
@@ -92,10 +92,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>630</y>
-      <w>160</w>
-      <h>30</h>
+      <x>252</x>
+      <y>686</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Head angle [deg]</panel_attributes>
     <additional_attributes/>
@@ -103,10 +103,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>630</y>
-      <w>100</w>
-      <h>30</h>
+      <x>490</x>
+      <y>686</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>69.5</panel_attributes>
     <additional_attributes/>
@@ -114,10 +114,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>670</y>
-      <w>160</w>
-      <h>30</h>
+      <x>252</x>
+      <y>742</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Headset height [mm]</panel_attributes>
     <additional_attributes/>
@@ -125,10 +125,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>670</y>
-      <w>100</w>
-      <h>30</h>
+      <x>490</x>
+      <y>742</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>5</panel_attributes>
     <additional_attributes/>
@@ -136,10 +136,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>790</y>
-      <w>160</w>
-      <h>30</h>
+      <x>252</x>
+      <y>910</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Stem height [mm]</panel_attributes>
     <additional_attributes/>
@@ -147,10 +147,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>790</y>
-      <w>100</w>
-      <h>30</h>
+      <x>490</x>
+      <y>910</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>40</panel_attributes>
     <additional_attributes/>
@@ -158,10 +158,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>710</y>
-      <w>160</w>
-      <h>30</h>
+      <x>252</x>
+      <y>798</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Handlebar X [mm]</panel_attributes>
     <additional_attributes/>
@@ -169,10 +169,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>710</y>
-      <w>100</w>
-      <h>30</h>
+      <x>490</x>
+      <y>798</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>515</panel_attributes>
     <additional_attributes/>
@@ -180,10 +180,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>750</y>
-      <w>160</w>
-      <h>30</h>
+      <x>252</x>
+      <y>854</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Handlebar Y [mm]</panel_attributes>
     <additional_attributes/>
@@ -191,10 +191,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>750</y>
-      <w>100</w>
-      <h>30</h>
+      <x>490</x>
+      <y>854</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>620</panel_attributes>
     <additional_attributes/>
@@ -202,10 +202,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>630</y>
-      <w>90</w>
-      <h>30</h>
+      <x>714</x>
+      <y>686</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Length [mm]</panel_attributes>
     <additional_attributes/>
@@ -213,10 +213,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>590</y>
-      <w>90</w>
-      <h>30</h>
+      <x>714</x>
+      <y>630</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Angle [deg]</panel_attributes>
     <additional_attributes/>
@@ -224,10 +224,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>710</y>
-      <w>160</w>
-      <h>30</h>
+      <x>714</x>
+      <y>798</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>save bike geometry
 
@@ -237,10 +237,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>750</y>
-      <w>160</w>
-      <h>30</h>
+      <x>714</x>
+      <y>854</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>load bike geometry</panel_attributes>
     <additional_attributes/>
@@ -248,21 +248,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>790</y>
-      <w>160</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>update bike geometry</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>540</x>
-      <y>670</y>
-      <w>90</w>
-      <h>30</h>
+      <x>714</x>
+      <y>742</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>spacer [mm]</panel_attributes>
     <additional_attributes/>
@@ -270,43 +259,43 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>590</y>
-      <w>210</w>
-      <h>30</h>
+      <x>868</x>
+      <y>644</y>
+      <w>560</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;380.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>640</y>
-      <w>210</w>
-      <h>30</h>
+      <x>868</x>
+      <y>700</y>
+      <w>560</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;380.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>680</y>
-      <w>210</w>
-      <h>30</h>
+      <x>868</x>
+      <y>756</y>
+      <w>560</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;380.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>770</x>
-      <y>590</y>
-      <w>20</w>
-      <h>20</h>
+      <x>1302</x>
+      <y>644</y>
+      <w>28</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -314,10 +303,10 @@
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>690</x>
-      <y>640</y>
-      <w>20</w>
-      <h>20</h>
+      <x>1190</x>
+      <y>700</y>
+      <w>28</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -325,10 +314,10 @@
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>750</x>
-      <y>680</y>
-      <w>20</w>
-      <h>20</h>
+      <x>1274</x>
+      <y>756</y>
+      <w>28</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -336,10 +325,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
-      <y>370</y>
-      <w>70</w>
-      <h>110</h>
+      <x>560</x>
+      <y>322</y>
+      <w>98</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=-
 lw=2
@@ -349,10 +338,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
-      <y>290</y>
-      <w>300</w>
-      <h>110</h>
+      <x>560</x>
+      <y>210</y>
+      <w>420</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=-
 lw=2
@@ -362,10 +351,10 @@ lw=2
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>550</x>
-      <y>340</y>
-      <w>20</w>
-      <h>20</h>
+      <x>994</x>
+      <y>280</y>
+      <w>28</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>type=flow_final</panel_attributes>
     <additional_attributes/>
@@ -373,10 +362,10 @@ lw=2
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>260</x>
-      <y>180</y>
-      <w>20</w>
-      <h>20</h>
+      <x>588</x>
+      <y>56</y>
+      <w>28</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -384,10 +373,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>180</y>
-      <w>210</w>
-      <h>30</h>
+      <x>420</x>
+      <y>56</y>
+      <w>294</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
@@ -395,10 +384,10 @@ lw=2
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>180</y>
-      <w>90</w>
-      <h>30</h>
+      <x>280</x>
+      <y>56</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>zoom</panel_attributes>
     <additional_attributes/>
@@ -406,10 +395,10 @@ lw=2
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>590</x>
-      <y>350</y>
-      <w>90</w>
-      <h>30</h>
+      <x>1050</x>
+      <y>294</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>(hX ; hY)
 lt=.
@@ -419,10 +408,10 @@ lt=.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>230</x>
-      <y>470</y>
-      <w>110</w>
-      <h>30</h>
+      <x>546</x>
+      <y>462</y>
+      <w>154</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>(reach ; stack)
 lt=.
@@ -432,10 +421,10 @@ lt=.
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>510</x>
-      <y>290</y>
-      <w>20</w>
-      <h>20</h>
+      <x>938</x>
+      <y>210</y>
+      <w>28</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>type=final</panel_attributes>
     <additional_attributes/>
@@ -443,10 +432,10 @@ lt=.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>480</x>
-      <y>250</y>
-      <w>90</w>
-      <h>30</h>
+      <x>896</x>
+      <y>154</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>handlebar
 lt=.
@@ -456,10 +445,10 @@ lt=.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
-      <y>790</y>
-      <w>160</w>
-      <h>30</h>
+      <x>1204</x>
+      <y>910</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>return menu</panel_attributes>
     <additional_attributes/>

@@ -5,10 +5,11 @@ GUI_Drawing::GUI_Drawing(QWidget *parent)
 {
     this->theScreenManager = NULL;
 
-    btnStylesheet = "QPushButton { background-color : orange; border: 1px solid gray; border-radius: 5px; color : black; font: 12px; }";
+    //btnStylesheet = "QPushButton{ background-color :  #F9C67E; border: 1px solid gray; border-radius: 5px; color : black; font: 12px; }";
     labelStylesheet = "QLabel { background-color: white; border: 1px solid gray; border-radius: 5px; color : black; font: 12px; }";
     lineEditStylesheet = "QLineEdit { color: blue; background-color: white; selection-color: yellow; selection-background-color: blue;border: 1px solid gray; border-radius: 5px; font: 12px}";
-    sliderStylesheet = "QSlider {color : blue}";
+    sliderStylesheet = "QSlider {}";
+
 }
 
 GUI_Drawing::~GUI_Drawing()
@@ -46,13 +47,11 @@ void GUI_Drawing::initRelations(ScreenManager* screenManager)
         tempBtn->setStyleSheet(btnStylesheet);
         tempBtn->show();
         btnVector.push_back(tempBtn);
-        btnVector.at(i)->setGeometry((theScreenManager->APP_WIDTH/2 - BTN1_WIDTH/2), theScreenManager->APP_HEIGHT-yOffset*(i+1), BTN1_WIDTH, COMPONENT_HEIGHT);
+        btnVector.at(i)->setGeometry(theScreenManager->APP_WIDTH-(BTN1_WIDTH+BTN1_OFFSET_X_RIGHT), theScreenManager->APP_HEIGHT-yOffset*(i+1), BTN1_WIDTH, COMPONENT_HEIGHT);
     }
     tempBtn = NULL;
 
     //correct the last button + the text
-    btnVector.at(ID_returnBtn)->setGeometry(theScreenManager->APP_WIDTH-(BTN1_WIDTH+BTN1_OFFSET_X_RIGHT), theScreenManager->APP_HEIGHT-(yOffset*1), BTN1_WIDTH, COMPONENT_HEIGHT);
-    btnVector.at(ID_updateBtn)->setText("Update results");
     btnVector.at(ID_loadBtn)->setText("Load bike geometry");
     btnVector.at(ID_saveBtn)->setText("Save bike geometry");
     btnVector.at(ID_returnBtn)->setText("Return to menu");
@@ -70,16 +69,16 @@ void GUI_Drawing::initRelations(ScreenManager* screenManager)
     tempLabel = NULL;
 
     //initialize the 4 label on the right side of the screen
-    int i = 0;
-    for(; i < 4; i++)
+    int l = 0;
+    for(; l < 4; l++)
     {
-        labelVector.at(i)->setGeometry((theScreenManager->APP_WIDTH/2 - LABEL_WIDTH/2), theScreenManager->APP_HEIGHT-yOffset*(i+4), LABEL_WIDTH, COMPONENT_HEIGHT);
+        labelVector.at(l)->setGeometry((theScreenManager->APP_WIDTH/2 - LABEL_WIDTH/2), theScreenManager->APP_HEIGHT-yOffset*(l+4), LABEL_WIDTH, COMPONENT_HEIGHT);
     }
 
     //initialize the 7 label on the left side of the screen
-    for(; i < 11; i++)
+    for(; l < 11; l++)
     {
-        labelVector.at(i)->setGeometry(LABEL_X_OFFSET, theScreenManager->APP_HEIGHT-yOffset*(i-3), LABEL_WIDTH, COMPONENT_HEIGHT);
+        labelVector.at(l)->setGeometry(LABEL_X_OFFSET, theScreenManager->APP_HEIGHT-yOffset*(l-3), LABEL_WIDTH, COMPONENT_HEIGHT);
     }
 
     //set the text of all the label
@@ -101,6 +100,7 @@ void GUI_Drawing::initRelations(ScreenManager* screenManager)
     {
         tempLineEdit = new QLineEdit(this);
         tempLineEdit->setStyleSheet(lineEditStylesheet);
+        tempLineEdit->setAlignment(Qt::AlignCenter);
         tempLineEdit->show();
         tempLineEdit->setGeometry(LINE_EDIT_X_OFFSET_LEFT, theScreenManager->APP_HEIGHT-yOffset*(j+1), LINE_EDIT_WIDTH_LEFT, COMPONENT_HEIGHT);
         lineEditVector.push_back(tempLineEdit);
@@ -116,19 +116,58 @@ void GUI_Drawing::initRelations(ScreenManager* screenManager)
         tempSlider = new QSlider(Qt::Horizontal, this);
         tempSlider->setStyleSheet(sliderStylesheet);
         tempSlider->show();
-        tempSlider->setGeometry((theScreenManager->APP_WIDTH/2 + BTN1_WIDTH/2 + X_OFFSET_RIGHT) , theScreenManager->APP_HEIGHT-yOffset*(k+4), SLIDER_WIDTH, COMPONENT_HEIGHT);
+        tempSlider->setGeometry((theScreenManager->APP_WIDTH/2 + BTN1_WIDTH/2 + X_OFFSET_RIGHT) , theScreenManager->APP_HEIGHT-(yOffset*(k+4)-5), SLIDER_WIDTH, SLIDER_HEIGHT);
         sliderVector.push_back(tempSlider);
     }
     tempSlider = NULL;
-    sliderVector.at(ID_zoomSlider)->setGeometry(50, 50, 300, 50);
+    sliderVector.at(ID_zoomSlider)->setGeometry(20, 20, SLIDER_ZOOM_WIDTH, SLIDER_HEIGHT);
 
 
     //connect the buttons
     connect(this->btnVector.at(ID_returnBtn), SIGNAL(clicked(bool)), this, SLOT(menuButtonClicked()));
+    connect(this->btnVector.at(ID_loadBtn), SIGNAL(clicked(bool)), this, SLOT(loadBtnClicked()));
+    connect(this->btnVector.at(ID_saveBtn), SIGNAL(clicked(bool)), this, SLOT(saveBtnClicked()));
+
+    //connect sliders
+    for(int i = 0;i<N_SLIDER; i++)
+    {
+        connect(this->sliderVector.at(i), SIGNAL(sliderReleased()), this, SLOT(oneSliderMoved()));
+    }
+
+    //connect line edit
+    for (int i = 0; i < N_LINEDIT;i++)
+    {
+        connect(this->lineEditVector.at(i), SIGNAL(editingFinished()), this, SLOT(oneLineEditUpdated()));
+    }
 }
 
 void GUI_Drawing::menuButtonClicked()
 {
+    std::cout<<"[GUI_Drawing] : menu button clicked" << std::endl;
     theScreenManager->btnPressed(BTN_ID_MENU);
+}
+
+void GUI_Drawing::loadBtnClicked()
+{
+    std::cout<<"[GUI_Drawing] : load button clicked" << std::endl;
+
+}
+
+void GUI_Drawing::saveBtnClicked()
+{
+    std::cout<<"[GUI_Drawing] : save button clicked" << std::endl;
+
+}
+
+void GUI_Drawing::oneSliderMoved()
+{
+    std::cout<<"[GUI_Drawing] : one slider has been released" << std::endl;
+
+}
+
+void GUI_Drawing::oneLineEditUpdated()
+{
+    std::cout<<"[GUI_Drawing] : one edit line has been updated" << std::endl;
+
 }
 

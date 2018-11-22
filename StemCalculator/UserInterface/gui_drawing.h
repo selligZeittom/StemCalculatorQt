@@ -36,12 +36,14 @@
 
 //define dimensions for slider
 #define SLIDER_WIDTH 760
+#define SLIDER_HEIGHT 40
+#define SLIDER_ZOOM_WIDTH 500
 
 //define some dimensions for the graphicalView
 #define OFFSET_VIEW 5
 
 //define numbers of items
-#define N_BTN 4
+#define N_BTN 3
 #define N_LABEL 15
 #define N_SLIDER 4
 #define N_LINEDIT 8
@@ -57,8 +59,16 @@ public:
     void initRelations(ScreenManager* screenManager);
 
 public slots:
+    //btn slots
     void menuButtonClicked();
+    void loadBtnClicked();
+    void saveBtnClicked();
 
+    //slider slot
+    void oneSliderMoved();
+
+    //lineEdit slot
+    void oneLineEditUpdated();
 
 private:
     //offset between components
@@ -85,10 +95,9 @@ private:
 
     enum btnId
     {
-        ID_updateBtn = 0,
+        ID_returnBtn = 0,
         ID_loadBtn = 1,
         ID_saveBtn = 2,
-        ID_returnBtn = 3
     };
 
     enum labelId
