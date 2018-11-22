@@ -13,6 +13,7 @@
 #include <QGraphicsLineItem>
 #include <QGraphicsTextItem>
 #include <QPen>
+#include <QVector>
 
 #include "gui_menu.h"
 
@@ -20,15 +21,25 @@
 #define BTN1_WIDTH 150
 #define BTN1_HEIGHT 50
 #define BTN1_OFFSET_X_RIGHT 50
-#define BTN1_OFFSET_Y 15
 
 //define some dimensions for labels
-#define LABEL_WIDTH 150
+#define LABEL_WIDTH 200
 #define LABEL_HEIGHT 50
-#define LABEL_Y_OFFSET 20
+#define LABEL_X_OFFSET 20
+
+//define some dimensions for line edit
+#define LINEEDIT_WIDTH 50
+#define LINEEDIT_HEIGHT 50
+#define LINEEDIT_X_OFFSET (LABEL_X_OFFSET+LABEL_WIDTH+30)
 
 //define some dimensions for the graphicalView
 #define OFFSET_VIEW 5
+
+//define numbers of items
+#define N_BTN 4
+#define N_LABEL 15
+#define N_SLIDER 4
+#define N_LINEDIT 7
 
 class ScreenManager;
 
@@ -59,35 +70,46 @@ private:
     //graphical objects
     QGraphicsView* drawingView;
     QGraphicsScene* scnView;
-    QPushButton* updateResultButton;
-    QPushButton* saveGeometryButton;
-    QPushButton* loadGeometryButton;
-    QPushButton* menuButton;
-    QLabel* reachLabel;
-    QLabel* stackLabel;
-    QLabel* headAngleLabel;
-    QLabel* headsetHeightLabel;
-    QLabel* stemHeightLabel;
-    QLabel* bikeNameLabel;
-    QLabel* handlebarXLabel;
-    QLabel* handlebarYLabel;
-    QLabel* angleLabel;
-    QLabel* lengthLabel;
-    QLabel* spacerLabel;
-    QLabel* displayAngleLabel;
-    QLabel* displayLengthLabel;
-    QLineEdit* reachLineEdit;
-    QLineEdit* stackLineEdit;
-    QLineEdit* headAngleLineEdit;
-    QLineEdit* headsetHeightLineEdit;
-    QLineEdit* stemHeightLineEdit;
-    QLineEdit* bikeNameLineEdit;
-    QLineEdit* handlebarXLineEdit;
-    QLineEdit* handlebarYLineEdit;
-    QSlider* angleSlider;
-    QSlider* lengthSlider;
-    QSlider* spacerHeightSlider;
-    QSlider* zoomSlider;
+
+    //4 vector of graphical objects
+    QVector<QPushButton*> btnVector;
+    QVector<QLabel*> labelVector;
+    QVector<QLineEdit*> lineEditVector;
+    QVector<QSlider*> sliderVector;
+
+    enum btnId
+    {
+        ID_updateBtn = 0,
+        ID_loadBtn = 1,
+        ID_saveBtn = 2,
+        ID_returnBtn = 3
+    };
+
+    enum labelId
+    {
+        ID_spacerLabel = 0,
+        ID_lengthLabel = 1,
+        ID_angleLabel = 2,
+        ID_IdLabel = 3,
+        ID_stemHeightLabel = 4,
+        ID_hyLabel = 5,
+        ID_hxLabel = 6,
+        ID_headsetHeightLabel = 7,
+        ID_headAngleLabel = 8,
+        ID_stackLabel = 9,
+        ID_reachLabel = 10
+    };
+
+    enum lineEditId
+    {
+        ID_stemHeightLineEdit = 1,
+        ID_hyLineEdit = 2,
+        ID_hxLineEdit = 3,
+        ID_headsetHeightLineEdit = 4,
+        ID_headAngleLineEdit = 5,
+        ID_stackLineEdit = 6,
+        ID_reachLineEdit = 7
+    };
 
 
 
