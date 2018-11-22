@@ -17,20 +17,25 @@
 
 #include "gui_menu.h"
 
+//normalized dimensions
+#define COMPONENT_HEIGHT 50
+#define X_OFFSET_RIGHT 20
+
 //define some dimensions for buttons
-#define BTN1_WIDTH 150
-#define BTN1_HEIGHT 50
-#define BTN1_OFFSET_X_RIGHT 50
+#define BTN1_WIDTH 200
+#define BTN1_OFFSET_X_RIGHT 20
 
 //define some dimensions for labels
 #define LABEL_WIDTH 200
-#define LABEL_HEIGHT 50
 #define LABEL_X_OFFSET 20
 
 //define some dimensions for line edit
-#define LINEEDIT_WIDTH 50
-#define LINEEDIT_HEIGHT 50
-#define LINEEDIT_X_OFFSET (LABEL_X_OFFSET+LABEL_WIDTH+30)
+#define LINE_EDIT_WIDTH_LEFT 100
+#define LINE_EDIT_WIDTH_RIGHT 760
+#define LINE_EDIT_X_OFFSET_LEFT (LABEL_X_OFFSET+LABEL_WIDTH+20)
+
+//define dimensions for slider
+#define SLIDER_WIDTH 760
 
 //define some dimensions for the graphicalView
 #define OFFSET_VIEW 5
@@ -39,7 +44,7 @@
 #define N_BTN 4
 #define N_LABEL 15
 #define N_SLIDER 4
-#define N_LINEDIT 7
+#define N_LINEDIT 8
 
 class ScreenManager;
 
@@ -66,6 +71,7 @@ private:
     QString btnStylesheet;
     QString labelStylesheet;
     QString lineEditStylesheet;
+    QString sliderStylesheet;
 
     //graphical objects
     QGraphicsView* drawingView;
@@ -102,13 +108,22 @@ private:
 
     enum lineEditId
     {
-        ID_stemHeightLineEdit = 1,
-        ID_hyLineEdit = 2,
-        ID_hxLineEdit = 3,
-        ID_headsetHeightLineEdit = 4,
-        ID_headAngleLineEdit = 5,
-        ID_stackLineEdit = 6,
-        ID_reachLineEdit = 7
+        ID_stemHeightLineEdit = 0,
+        ID_hyLineEdit = 1,
+        ID_hxLineEdit = 2,
+        ID_headsetHeightLineEdit = 3,
+        ID_headAngleLineEdit = 4,
+        ID_stackLineEdit = 5,
+        ID_reachLineEdit = 6,
+        ID_IdLineEdit = 7
+    };
+
+    enum sliderId
+    {
+        ID_spacerSlider = 0,
+        ID_lengthSlider = 1,
+        ID_angleSlider = 2,
+        ID_zoomSlider = 3
     };
 
 
