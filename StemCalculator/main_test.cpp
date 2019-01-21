@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     QJsonObject bo2 = b2.getJsonFromBike();
     dbManager->addBikeToDB(bo1);
     dbManager->addBikeToDB(bo2);
+    dbManager->removeBikeFromDB(bo1);
 
 
 }
