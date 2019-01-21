@@ -6,18 +6,23 @@
 #include <QJsonDocument>
 #include <QFile>
 #include <QJsonObject>
+#include <QDebug>
 
 #include "Model/bike.h"
 
 class DatabaseManager
 {
 public:
-    DatabaseManager();
-    ~DatabaseManager();
-    void updateJsonFile(QJsonObject obj);
+    static DatabaseManager& getInstance();
+    void addBikeToDB(QJsonObject obj);
 
 private:
-    QVector <Bike> bikes;
+    DatabaseManager();
+    ~DatabaseManager();
+    QJsonArray jsonBikeArray;
+
+    //the one and only one dvb manager
+    static DatabaseManager theDatabaseManager;
 };
 
 #endif // DATABASEMANAGER_H

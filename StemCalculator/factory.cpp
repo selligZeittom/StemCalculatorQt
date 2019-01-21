@@ -4,6 +4,7 @@
 #include "UserInterface/screenmanager.h"
 #include "UserInterface/gui_computing.h"
 #include "UserInterface/gui_database.h"
+#include "Controller/databasemanager.h"
 #include "XF/xf.h"
 
 Factory::Factory()
@@ -15,6 +16,7 @@ Factory::Factory()
     theComputingWindow = NULL;
     theDrawingWindow = NULL;
     theDatabaseWindow = NULL;
+    theDatabaseManager = NULL;
 }
 
 Factory::~Factory()
@@ -29,6 +31,7 @@ void Factory::create()
     theComputingWindow = new GUI_Computing();
     theDrawingWindow = new GUI_Drawing();
     theDatabaseWindow = new GUI_Database();
+    theDatabaseManager = &(DatabaseManager::getInstance());
 }
 
 void Factory::build()

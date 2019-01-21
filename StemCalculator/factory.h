@@ -8,6 +8,7 @@ class GUI_Menu;
 class GUI_Computing;
 class GUI_Drawing;
 class GUI_Database;
+class DatabaseManager;
 
 class Factory
 {
@@ -24,6 +25,7 @@ private:
     GUI_Computing* theComputingWindow;
     GUI_Drawing* theDrawingWindow;
     GUI_Database* theDatabaseWindow;
+    DatabaseManager* theDatabaseManager;
 
 };
 

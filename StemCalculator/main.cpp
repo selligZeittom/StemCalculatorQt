@@ -4,6 +4,7 @@
 
 #include "factory.h"
 
+
 int main(int argc, char *argv[])
 {
     std::cout << "start of the stem calculator app" << std::endl;

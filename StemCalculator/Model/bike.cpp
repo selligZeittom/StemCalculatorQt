@@ -38,7 +38,7 @@ void Bike::setGeometry(QString name, int stack, int reach, int spacerHeight, int
 QJsonObject Bike::getJsonFromBike()
 {
     QJsonObject bikeToJson;
-    bikeToJson["name"] = QString(this->name);
+    bikeToJson["name"] = this->name;
     bikeToJson["stack"] = this->stack;
     bikeToJson["reach"] = this->reach;
     bikeToJson["spacerHeight"] = this->spacerHeight;
