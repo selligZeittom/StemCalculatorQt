@@ -9,7 +9,6 @@ GUI_Drawing::GUI_Drawing(QWidget *parent)
     labelStylesheet = "QLabel { background-color: white; border: 1px solid gray; border-radius: 5px; color : black; font: 12px; }";
     lineEditStylesheet = "QLineEdit { color: blue; background-color: white; selection-color: yellow; selection-background-color: blue;border: 1px solid gray; border-radius: 5px; font: 12px}";
     sliderStylesheet = "QSlider {}";
-
 }
 
 GUI_Drawing::~GUI_Drawing()
