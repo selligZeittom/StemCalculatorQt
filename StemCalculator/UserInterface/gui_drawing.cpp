@@ -84,7 +84,7 @@ void GUI_Drawing::initRelations(ScreenManager* screenManager)
     labelVector.at(ID_spacerLabel)->setText("Spacer [mm]");
     labelVector.at(ID_lengthLabel)->setText("Length[mm]");
     labelVector.at(ID_angleLabel)->setText("Angle [deg]");
-    labelVector.at(ID_IdLabel)->setText("ID");
+    labelVector.at(ID_IdLabel)->setText("Name");
     labelVector.at(ID_stemHeightLabel)->setText("Stem height [mm]");
     labelVector.at(ID_hyLabel)->setText("Handlebar Y [mm]");
     labelVector.at(ID_hxLabel)->setText("Handlebar X [mm]");

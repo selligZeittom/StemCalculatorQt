@@ -3,6 +3,7 @@
 #include <QDebug>
 #include <QJsonObject>
 
+/*
 int main(int argc, char *argv[])
 {
     qDebug() << "start of tests";
@@ -17,3 +18,4 @@ int main(int argc, char *argv[])
 
 
 }
+*/
