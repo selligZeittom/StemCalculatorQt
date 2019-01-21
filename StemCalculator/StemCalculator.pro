@@ -22,7 +22,8 @@ SOURCES += main.cpp \
     UserInterface/gui_database.cpp \
     XF/xf.cpp \
     XF/xfevent.cpp \
-    XF/xftimer.cpp
+    XF/xftimer.cpp \
+    Controller/databasemanager.cpp
 
 HEADERS  += \
     Model/bike.h \
@@ -35,4 +36,5 @@ HEADERS  += \
     XF/ism.h \
     XF/xf.h \
     XF/xfevent.h \
-    XF/xftimer.h
+    XF/xftimer.h \
+    Controller/databasemanager.h

@@ -2,9 +2,6 @@
 #define BIKE_H
 
 #include <QString>
-#include <QJsonArray>
-#include <QJsonDocument>
-#include <QFile>
 #include <QJsonObject>
 
 
