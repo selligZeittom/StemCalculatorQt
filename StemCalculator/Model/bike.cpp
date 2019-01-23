@@ -46,3 +46,20 @@ QJsonObject Bike::getJsonFromBike()
     bikeToJson["steeringAngle"] = this->steeringAngle;
     return bikeToJson;
 }
+
+QString Bike::getString() const
+{
+    QString res = "[name] : ";
+    res.append(this->name);
+    res.append("\t\t\t[reach] : ");
+    res.append(QString::number(this->reach)).append("mm");
+    res.append("\t\t[stack] : ");
+    res.append(QString::number(this->stack)).append("mm");
+    res.append("\t\t[steeringAngle] : ");
+    res.append(QString::number(this->steeringAngle)).append("deg");
+    res.append("\t\t[spacer height] : ");
+    res.append(QString::number(this->spacerHeight)).append("mm");
+    res.append("\t\t[headset height] : ");
+    res.append(QString::number(this->headsetHeight)).append("mm");
+    return res;
+}

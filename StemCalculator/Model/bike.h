@@ -3,9 +3,10 @@
 
 #include <QString>
 #include <QJsonObject>
+#include <QListWidgetItem>
 
 
-class Bike
+class Bike : public QListWidgetItem
 {
 public:
     Bike();
@@ -13,6 +14,7 @@ public:
     ~Bike();
     void setGeometry(QString name, int stack, int reach, int spacerHeight, int headsetHeight, double steeringAngle);
     QJsonObject getJsonFromBike();
+    QString getString() const;
 
 private:
     QString name;

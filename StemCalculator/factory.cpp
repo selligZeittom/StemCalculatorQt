@@ -40,7 +40,6 @@ void Factory::build()
     theComputingWindow->initRelations(theScreenManager);
     theDatabaseWindow->initRelations(theScreenManager);
     theDrawingWindow->initRelations(theScreenManager);
-
     theScreenManager->initRelations(theDrawingWindow, theMenuWindow, theComputingWindow, theDatabaseWindow);
 }
 

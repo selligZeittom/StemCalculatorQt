@@ -11,7 +11,7 @@
 #include "Controller/databasemanager.h"
 
 #define N_BTN 4
-#define N_LABEL 7
+#define N_LABEL 6
 
 class ScreenManager;
 
@@ -26,13 +26,22 @@ public:
 
 public slots:
     void menuButtonClicked();
+    void refreshBtnClicked();
+    void addBtnClicked();
+    void removeBtnClicked();
 
 private:
+    //update the list on the screen
+    void listUpdate();
+
     //the screen manager
     ScreenManager* theScreenManager;
 
     //the db manager
     DatabaseManager* theDBmanager;
+
+    //vector of bikes stored inside the DB
+    QVector<Bike> bikesFromDB;
 
     //style sheet for objects
     QString btnStylesheet;
@@ -40,10 +49,6 @@ private:
     QString lineEditStylesheet;
 
     //graphical objects
-    QPushButton* menuBtn;
-    QPushButton* addToDbBtn;
-    QPushButton* removeFromDbBtn;
-    QPushButton* getFromDbBtn;
     QListWidget* listWidget;
 
     QVector<QPushButton*> btnVector;
@@ -60,24 +65,22 @@ private:
 
     enum labelId
     {
-        ID_spacerLabel = 0,
-        ID_IdLabel = 1,
-        ID_stemHeightLabel = 2,
-        ID_headsetHeightLabel = 3,
-        ID_headAngleLabel = 4,
-        ID_stackLabel = 5,
-        ID_reachLabel = 6
+        ID_IdLabel,
+        ID_reachLabel,
+        ID_stackLabel,
+        ID_headAngleLabel,
+        ID_spacerLabel,
+        ID_headsetHeightLabel
     };
 
     enum lineEditId
     {
-        ID_stemHeightLineEdit = 0,
-        ID_headsetHeightLineEdit = 1,
-        ID_headAngleLineEdit = 2,
-        ID_stackLineEdit = 3,
-        ID_reachLineEdit = 4,
-        ID_IdLineEdit = 5,
-        ID_spacerLineEdit = 6
+        ID_IdLineEdit,
+        ID_reachLineEdit,
+        ID_stackLineEdit,
+        ID_headAngleLineEdit,
+        ID_spacerLineEdit,
+        ID_headsetHeightLineEdit
     };
 };
 
