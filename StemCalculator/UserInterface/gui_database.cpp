@@ -132,6 +132,7 @@ void GUI_Database::removeBtnClicked()
 
 void GUI_Database::listUpdate()
 {
+    listWidget->clear();
     for(int i = 0; i < bikesFromDB.count(); i++)
     {
         QString bikeConfig = bikesFromDB.at(i).getString();

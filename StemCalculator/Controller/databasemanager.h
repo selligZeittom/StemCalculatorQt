@@ -25,6 +25,9 @@ private:
     void writeFile();
     QJsonArray jsonBikeArray;
 
+    //is it the first time that we are checking into db ?
+    bool readForTheFirstTime;
+
     //the one and only one dvb manager
     static DatabaseManager theDatabaseManager;
 };

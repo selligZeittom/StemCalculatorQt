@@ -9,7 +9,7 @@ DatabaseManager &DatabaseManager::getInstance()
 
 DatabaseManager::DatabaseManager()
 {
-
+    readForTheFirstTime = true;
 }
 
 DatabaseManager::~DatabaseManager()
@@ -35,6 +35,17 @@ void DatabaseManager::writeFile()
 void DatabaseManager::addBikeToDB(QJsonObject obj)
 {
     jsonBikeArray.append(obj);
+    //if it's the first time we wanna wrtite a bike, make sure to get the ones already written
+    if(readForTheFirstTime)
+    {
+        readForTheFirstTime = false;
+        QVector<Bike> bikesAlreadyWritten = getBikesFromDB();
+        for (int i = 0; i < bikesAlreadyWritten.count(); ++i)
+        {
+            Bike temp = bikesAlreadyWritten.at(i);
+            jsonBikeArray.append(temp.getJsonFromBike());
+        }
+    }
     writeFile();
 }
 
