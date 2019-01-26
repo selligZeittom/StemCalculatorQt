@@ -114,20 +114,29 @@ void GUI_Database::addBtnClicked()
 {
     qDebug() << "[DBgui] : add btn clicked";
     QString n = lineEditVector.at(ID_IdLineEdit)->text();
-    int s = lineEditVector.at(ID_stackLineEdit)->text().toInt();
-    int r = lineEditVector.at(ID_reachLineEdit)->text().toInt();
-    int sh = lineEditVector.at(ID_spacerLineEdit)->text().toInt();
-    int hh = lineEditVector.at(ID_headsetHeightLineEdit)->text().toInt();
-    double sa = lineEditVector.at(ID_headAngleLineEdit)->text().toDouble();
-    Bike b2add(n, s, r, sh, hh, sa);
-    bikesFromDB.append(b2add);
-    theDBmanager->addBikeToDB(b2add.getJsonFromBike());
-    listUpdate();
+    if(n != "")
+    {
+        int s = lineEditVector.at(ID_stackLineEdit)->text().toInt();
+        int r = lineEditVector.at(ID_reachLineEdit)->text().toInt();
+        int sh = lineEditVector.at(ID_spacerLineEdit)->text().toInt();
+        int hh = lineEditVector.at(ID_headsetHeightLineEdit)->text().toInt();
+        double sa = lineEditVector.at(ID_headAngleLineEdit)->text().toDouble();
+        Bike b2add(n, s, r, sh, hh, sa);
+        bikesFromDB.append(b2add);
+        theDBmanager->addBikeToDB(b2add.getJsonFromBike());
+        listUpdate();
+    }
 }
 
 void GUI_Database::removeBtnClicked()
 {
     qDebug() << "[DBgui] : remove btn clicked";
+    QList<QListWidgetItem*> targetedBikes = listWidget->selectedItems();
+    for(int i = 0; i < targetedBikes.count(); i++)
+    {
+        qDebug() << targetedBikes.at(i)->text();
+
+    }
 }
 
 void GUI_Database::listUpdate()
