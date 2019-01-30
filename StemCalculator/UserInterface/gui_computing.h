@@ -11,7 +11,7 @@
 #include "Controller/databasemanager.h"
 
 #define N_BTN 4
-#define N_LABEL 9
+#define N_LABEL 11
 
 class ScreenManager;
 
@@ -59,7 +59,9 @@ private:
         ID_headsetHeightLabel,
         ID_hxLabel,
         ID_hyLabel,
-        ID_stemHeightLabel
+        ID_stemHeightLabel,
+        ID_stemLengthLabel,
+        ID_stemAngleLabel
     };
 
     enum lineEditId
@@ -72,7 +74,9 @@ private:
         ID_headsetHeightLineEdit,
         ID_hxLineEdit,
         ID_hyLineEdit,
-        ID_stemHeightLineEdit
+        ID_stemHeightLineEdit,
+        ID_stemLengthLineEdit,
+        ID_stemAngleLineEdit
     };
 
 public slots:

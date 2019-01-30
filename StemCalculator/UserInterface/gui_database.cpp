@@ -85,6 +85,7 @@ void GUI_Database::initRelations(ScreenManager *screenManager)
         lineEditVector.at(l)->setGeometry(900, theScreenManager->APP_HEIGHT-75*(8-l), 200, 50);
     }
 
+
     //set the text of all the label
     labelVector.at(ID_spacerLabel)->setText("Spacer [mm]");
     labelVector.at(ID_IdLabel)->setText("Name");

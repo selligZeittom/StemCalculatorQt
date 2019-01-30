@@ -82,10 +82,17 @@ void GUI_Computing::initRelations(ScreenManager *screenManager)
         lineEditVector.at(l)->setGeometry(675, theScreenManager->APP_HEIGHT-75*(8-l), 200, 50);
     }
 
-    for(; l < N_LABEL; l++)
+    for(; l < N_LABEL-2; l++)
     {
         labelVector.at(l)->setGeometry(925, theScreenManager->APP_HEIGHT-75*(12-l), 150, 50);
         lineEditVector.at(l)->setGeometry(1100, theScreenManager->APP_HEIGHT-75*(12-l), 200, 50);
+    }
+
+
+    for(; l < N_LABEL; l++)
+    {
+        labelVector.at(l)->setGeometry(700, 300 + (l-10) * 75, 150, 50);
+        lineEditVector.at(l)->setGeometry(900, 300 + (l-10) * 75, 200, 50);
     }
 
     //set the text of all the label
@@ -95,9 +102,11 @@ void GUI_Computing::initRelations(ScreenManager *screenManager)
     labelVector.at(ID_headAngleLabel)->setText("Head angle [deg]");
     labelVector.at(ID_stackLabel)->setText("Stack [mm]");
     labelVector.at(ID_reachLabel)->setText("Reach [mm]");
-    labelVector.at(ID_hxLabel)->setText("Handlebar X coordinate[mm]");
-    labelVector.at(ID_hyLabel)->setText("Handlebar Y coordinate[mm]");
+    labelVector.at(ID_hxLabel)->setText("Handlebar X coordinate [mm]");
+    labelVector.at(ID_hyLabel)->setText("Handlebar Y coordinate [mm]");
     labelVector.at(ID_stemHeightLabel)->setText("Stem height [mm]");
+    labelVector.at(ID_stemLengthLabel)->setText("Stem length [mm]");
+    labelVector.at(ID_stemAngleLabel)->setText("Stem angle [deg]");
 
 }
 
