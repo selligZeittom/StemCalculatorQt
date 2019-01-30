@@ -5,7 +5,6 @@ GUI_Database::GUI_Database()
 {
     this->theScreenManager = NULL;
     this->listWidget = NULL;
-    this->theDBmanager = &(DatabaseManager::getInstance());
 
     btnStylesheet = "QPushButton { background-color : white; border: 1px solid gray; border-radius: 10px; color : black;  font: bold 14px; }";
     labelStylesheet = "QLabel { background-color: white; border: 1px solid gray; border-radius: 5px; color : black; font: 12px; }";
@@ -20,6 +19,8 @@ GUI_Database::~GUI_Database()
 
 void GUI_Database::initRelations(ScreenManager *screenManager)
 {
+    this->theDBmanager = &(DatabaseManager::getInstance());
+
     //set the screenManager
     this->theScreenManager = screenManager;
 

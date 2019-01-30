@@ -57,10 +57,10 @@ private:
 
     enum btnId
     {
-        ID_returnBtn = 0,
-        ID_addBtn = 1,
-        ID_removeBtn = 2,
-        ID_refreshBtn = 3
+        ID_returnBtn,
+        ID_addBtn,
+        ID_removeBtn,
+        ID_refreshBtn
     };
 
     enum labelId

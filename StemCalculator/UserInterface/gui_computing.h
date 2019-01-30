@@ -4,6 +4,14 @@
 #include <QObject>
 #include <QWidget>
 #include <QPushButton>
+#include <QVector>
+#include <QLabel>
+#include <QLineEdit>
+#include <QDebug>
+#include "Controller/databasemanager.h"
+
+#define N_BTN 4
+#define N_LABEL 9
 
 class ScreenManager;
 
@@ -20,14 +28,58 @@ private:
     //the screen manager
     ScreenManager* theScreenManager;
 
+    //the db manager
+    DatabaseManager* theDBmanager;
+
     //style sheet for objects
     QString btnStylesheet;
+    QString labelStylesheet;
+    QString lineEditStylesheet;
 
     //graphical objects
-    QPushButton* menuButton;
+    QVector<QPushButton*> btnVector;
+    QVector<QLabel*> labelVector;
+    QVector<QLineEdit*> lineEditVector;
+
+    enum btnId
+    {
+        ID_returnBtn,
+        ID_computeBtn,
+        ID_loadBtn,
+        ID_storeBtn
+    };
+
+    enum labelId
+    {
+        ID_IdLabel,
+        ID_reachLabel,
+        ID_stackLabel,
+        ID_headAngleLabel,
+        ID_spacerLabel,
+        ID_headsetHeightLabel,
+        ID_hxLabel,
+        ID_hyLabel,
+        ID_stemHeightLabel
+    };
+
+    enum lineEditId
+    {
+        ID_IdLineEdit,
+        ID_reachLineEdit,
+        ID_stackLineEdit,
+        ID_headAngleLineEdit,
+        ID_spacerLineEdit,
+        ID_headsetHeightLineEdit,
+        ID_hxLineEdit,
+        ID_hyLineEdit,
+        ID_stemHeightLineEdit
+    };
 
 public slots:
     void menuButtonClicked();
+    void computeBtnClicked();
+    void loadBtnClicked();
+    void storeBtnClicked();
 };
 
 #endif // GUI_COMPUTING_H
