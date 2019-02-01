@@ -4,7 +4,7 @@
 
 #include "factory.h"
 
-
+/*
 int main(int argc, char *argv[])
 {
     std::cout << "start of the stem calculator app" << std::endl;
@@ -13,4 +13,4 @@ int main(int argc, char *argv[])
     f.build();
     return XF::getInstance().exec();
     f.destroy();
-}
+}*/

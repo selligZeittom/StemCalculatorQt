@@ -51,7 +51,8 @@ void GUI_Computing::initRelations(ScreenManager *screenManager)
     //create all the label and lineedit
     QLabel* tempLabel;
     QLineEdit* tempLE;
-    for(int i = 0; i < N_LABEL; i++)
+    int i = 0;
+    for(; i < N_LINEEDIT; i++)
     {
         tempLabel = new QLabel(this);
         tempLE = new QLineEdit(this);
@@ -64,6 +65,15 @@ void GUI_Computing::initRelations(ScreenManager *screenManager)
         labelVector.push_back(tempLabel);
         lineEditVector.push_back(tempLE);
     }
+    for(;i<N_LABEL;i++)
+    {
+        tempLabel = new QLabel(this);
+        tempLabel->setStyleSheet(labelStylesheet);
+        tempLabel->show();
+        tempLabel->setAlignment(Qt::AlignCenter);
+        labelVector.push_back(tempLabel);
+    }
+
     tempLabel = NULL;
     tempLE = NULL;
 
@@ -82,17 +92,18 @@ void GUI_Computing::initRelations(ScreenManager *screenManager)
         lineEditVector.at(l)->setGeometry(675, theScreenManager->APP_HEIGHT-75*(8-l), 200, 50);
     }
 
-    for(; l < N_LABEL-2; l++)
+    for(; l < N_LINEEDIT; l++)
     {
         labelVector.at(l)->setGeometry(925, theScreenManager->APP_HEIGHT-75*(12-l), 150, 50);
         lineEditVector.at(l)->setGeometry(1100, theScreenManager->APP_HEIGHT-75*(12-l), 200, 50);
     }
 
 
-    for(; l < N_LABEL; l++)
+    for(; l < N_LABEL-1;)
     {
-        labelVector.at(l)->setGeometry(700, 300 + (l-10) * 75, 150, 50);
-        lineEditVector.at(l)->setGeometry(900, 300 + (l-10) * 75, 200, 50);
+        labelVector.at(l)->setGeometry(700, 300 + (l-10) * 37, 150, 50);
+        labelVector.at(l+1)->setGeometry(900, 300 + (l-10) * 37, 200, 50);
+        l+=2;
     }
 
     //set the text of all the label

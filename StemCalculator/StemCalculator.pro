@@ -24,7 +24,8 @@ SOURCES += main.cpp \
     XF/xfevent.cpp \
     XF/xftimer.cpp \
     Controller/databasemanager.cpp \
-    main_test.cpp
+    main_test.cpp \
+    Model/compute.cpp
 
 HEADERS  += \
     Model/bike.h \
@@ -38,4 +39,5 @@ HEADERS  += \
     XF/xf.h \
     XF/xfevent.h \
     XF/xftimer.h \
-    Controller/databasemanager.h
+    Controller/databasemanager.h \
+    Model/compute.h
